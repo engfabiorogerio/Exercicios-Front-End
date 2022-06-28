@@ -1,0 +1,27 @@
+main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container{
+    display: inline-block;
+    cursor:pointer;
+}
+.barra1, .barra2, .barra3 {
+    width: 80px;
+    height: 12px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .barra1 {
+    -webkit-transform: rotate(-60deg) translate(-9px, 8px);
+    transform: rotate(-60deg) translate(-9px, 8px);
+}
+.change .barra2 {
+    opacity: 0;
+}
+.change .barra3 {
+    -webkit-transform: rotate(60deg) translate(-8px, -8px);
+    transform: rotate(60deg) translate(-8px, -8px);
+}

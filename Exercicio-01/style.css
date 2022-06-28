@@ -1,0 +1,104 @@
+/*Imports*/
+    @import url('http://fonts.cdnfonts.com/css/ibm-logo');
+
+/*Configurações Gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    background-color: yellow;
+}
+
+/*Configurações Específicas*/
+header{
+    height: 10vh;
+    width: 100%;
+}
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'IBM Logo', sans-serif;
+    margin-top: 22px;
+    color: rgb(21, 21, 218)
+   
+}
+main {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main p {
+    font-size: 2rem;
+    text-align: center;
+   
+} 
+.container {
+    display: inline-block;
+    cursor: pointer;
+   display: block;
+   
+} 
+.line1, .line2, .line3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .line1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .line2 {
+    opacity: 0;
+}    
+.change .line3 {
+    -webkit-transform: rotate(45deg) translate(-8px,-8px);
+    transform: rotate(45deg) translate(-8px,-8px);
+}
+footer{
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+}
+/*Responsividade*/
+
+@media screen and (max-width: 1124px) {
+    header{
+        height: 20vh;
+    }
+    main{
+        height: 65vh;
+    }
+   } 
+@media screen and (max-width: 780px){
+        main p{
+            font-size: 1.5rem;
+        }
+        footer {
+            font-size: 2.4rem;
+        }
+   }
+@media screen and (max-width: 631px){
+    header{
+        height: 30vh;
+    }
+    main{
+        height: 55vh;
+    }
+    main p{
+        font-size: 1.2rem;
+    }
+    footer {
+        font-size: 1.5rem;
+    }
+}
+    
